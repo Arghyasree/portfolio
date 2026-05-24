@@ -143,7 +143,7 @@ export const PROFILE = {
       year: '2025',
     },
     {
-      title: 'Qualified GATE in Computer Science',
+      title: 'GATE in Computer Science',
       year: '2023',
     },
   ],
