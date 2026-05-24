@@ -25,9 +25,6 @@ export const PROFILE = {
   name: 'Arghyasree Saha',
   selfName: 'Arghyasree Saha',
   selfCitationName: 'A. Saha',
-  /** Place your square photo at public/profile.jpg (recommended ≥ 400×400 px) */
-  photo: '/profile.JPG',
-  photoPlaceholder: '/profile-placeholder.svg',
   role: 'PhD Student in Computer Science',
   homeBio: [
     {

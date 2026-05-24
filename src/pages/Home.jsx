@@ -1,8 +1,7 @@
-import { useState } from 'react'
+import profileImage from '../assets/profile.jpg'
 import { PROFILE } from '../data/profile'
 
 export default function Home() {
-  const [photoSrc, setPhotoSrc] = useState(PROFILE.photo)
   const [bioLead] = PROFILE.homeBio
 
   return (
@@ -10,16 +9,11 @@ export default function Home() {
       <div className="container hero__layout">
         <div className="hero__portrait">
           <img
-            src={photoSrc}
+            src={profileImage}
             alt={`Portrait of ${PROFILE.name}`}
             className="hero__photo"
             width={200}
             height={200}
-            onError={() => {
-              if (photoSrc !== PROFILE.photoPlaceholder) {
-                setPhotoSrc(PROFILE.photoPlaceholder)
-              }
-            }}
           />
         </div>
 
