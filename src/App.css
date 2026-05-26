@@ -793,7 +793,6 @@ main {
 
 .honors-list__item {
   padding: 14px 0;
-  border-bottom: 1px solid var(--border);
 }
 
 .honors-list__title {
@@ -817,7 +816,6 @@ main {
 }
 
 .honors-list__item:last-child {
-  border-bottom: 0;
   padding-bottom: 0;
 }
 
