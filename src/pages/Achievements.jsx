@@ -11,12 +11,15 @@ export default function Achievements() {
         <ul className="honors-list">
           {PROFILE.achievements.map((item) => (
             <li key={item.title} className="honors-list__item">
-              <p className="honors-list__title">
-                {item.title}, {item.year}
-              </p>
-              {item.detail ? (
-                <p className="honors-list__detail">{item.detail}</p>
-              ) : null}
+              <span className="honors-list__year" aria-label={`Year ${item.year}`}>
+                {item.year}
+              </span>
+              <div className="honors-list__content">
+                <p className="honors-list__title">{item.title}</p>
+                {item.detail ? (
+                  <p className="honors-list__detail">{item.detail}</p>
+                ) : null}
+              </div>
             </li>
           ))}
         </ul>
