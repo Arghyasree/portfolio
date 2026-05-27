@@ -102,6 +102,27 @@ export const PROFILE = {
       year: 2025,
       href: 'https://link.springer.com/chapter/10.1007/978-3-032-17181-8_26',
     },
+    {
+      type: 'book-chapter',
+      title:
+        'SZ-Net: A Hybrid CNN-BiLSTM-BiGRU Framework for Schizophrenia Detection and Classification Using Electroencephalogram Signals',
+      authors: ['A. Saha', 'P. K. Singh'],
+      venue: 'Recent Advances in Artificial Neural Networks',
+      year: 2026,
+      href: 'https://link.springer.com/chapter/10.1007/978-3-032-13497-4_5',
+    },
+  ],
+  experience: [
+    {
+      title: 'Teaching Assistant — Object-Oriented Systems Lab',
+      year: '2026',
+      detail: 'B.E. (IT) 2nd Year, Jadavpur University',
+    },
+    {
+      title: 'Teaching Assistant — Machine Learning Lab',
+      year: '2025',
+      detail: 'B.E. (IT) 4th Year, Jadavpur University',
+    },
   ],
   education: [
     {

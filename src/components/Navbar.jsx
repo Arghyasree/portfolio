@@ -7,7 +7,9 @@ const NAV_ITEMS = [
   { path: '/research', label: 'Research' },
   { path: '/publications', label: 'Publications' },
   { path: '/education', label: 'Education' },
+  { path: '/experience', label: 'Experience' },
   { path: '/achievements', label: 'Achievements' },
+  { path: '/gallery', label: 'Gallery' },
   { path: '/contact', label: 'Contact' },
 ]
 

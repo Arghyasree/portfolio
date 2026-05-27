@@ -8,14 +8,15 @@ export default function Achievements() {
         <header className="section-head section-head--compact">
           <h1 className="section-head__title">Achievements</h1>
         </header>
-        <div className="honors-list" role="list">
+        <div className="experience-list" role="list">
           {PROFILE.achievements.map((item) => (
-            <section key={item.title} className="honors-list__item" role="listitem">
-              <p className="honors-list__title">
-                {item.title}, {item.year}
-              </p>
+            <section key={item.title} className="experience-row" role="listitem">
+              <div className="experience-row__header">
+                <h2 className="experience-row__title">{item.title}</h2>
+                <span className="experience-row__year">{item.year}</span>
+              </div>
               {item.detail ? (
-                <p className="honors-list__detail">{item.detail}</p>
+                <p className="experience-row__detail">{item.detail}</p>
               ) : null}
             </section>
           ))}

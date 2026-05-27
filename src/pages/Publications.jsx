@@ -10,9 +10,9 @@ function PublicationGroup({ title, items }) {
       <h2 className="pub-section__title" id={`pub-${title.toLowerCase()}`}>
         {title}
       </h2>
-      <ol className="pub-list--plain">
+      <div className="pub-list--plain" role="list">
         {items.map((pub) => (
-          <li key={pub.title} className="pub-entry">
+          <article key={pub.title} className="pub-entry" role="listitem">
             <a
               href={pub.href}
               className="pub-entry__title"
@@ -25,9 +25,9 @@ function PublicationGroup({ title, items }) {
             <p className="pub-entry__venue">
               {pub.venue}, {pub.year}.
             </p>
-          </li>
+          </article>
         ))}
-      </ol>
+      </div>
     </section>
   )
 }
@@ -36,6 +36,9 @@ export default function Publications() {
   const journals = PROFILE.publications.filter((pub) => pub.type === 'journal')
   const conferences = PROFILE.publications.filter(
     (pub) => pub.type === 'conference'
+  )
+  const bookChapters = PROFILE.publications.filter(
+    (pub) => pub.type === 'book-chapter'
   )
 
   return (
@@ -49,6 +52,7 @@ export default function Publications() {
         </header>
         <PublicationGroup title="Journals" items={journals} />
         <PublicationGroup title="Conferences" items={conferences} />
+        <PublicationGroup title="Book Chapters" items={bookChapters} />
       </div>
     </RevealSection>
   )
