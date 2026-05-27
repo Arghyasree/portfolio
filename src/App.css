@@ -687,31 +687,34 @@ main {
 }
 
 .experience-row__header {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 16px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: start;
+  column-gap: 16px;
 }
 
 .experience-row__title {
   margin: 0;
+  padding: 0;
   font-family: var(--font-sans);
   font-size: 1rem;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.35;
   color: var(--text-heading);
 }
 
 .experience-row__year {
-  display: block;
-  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+  justify-self: end;
+  align-self: start;
+  font-family: var(--font-sans);
   font-size: 1rem;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.35;
   color: var(--text-heading);
   text-align: right;
-  margin: 0;
-  padding-top: 0;
+  white-space: nowrap;
 }
 
 .experience-row__detail {
@@ -719,6 +722,18 @@ main {
   font-size: 0.9375rem;
   line-height: 1.6;
   color: var(--text-muted);
+}
+
+@media (max-width: 640px) {
+  .experience-row__header {
+    grid-template-columns: 1fr;
+    row-gap: 2px;
+  }
+
+  .experience-row__year {
+    justify-self: start;
+    text-align: left;
+  }
 }
 
 /* -- Gallery -- */
@@ -906,19 +921,47 @@ main {
 
 .honors-list__item {
   padding: 14px 0;
-}
-
-.honors-list__title {
-  margin: 0;
-  font-family: var(--font-sans);
-  font-size: 0.9725rem;
-  font-weight: 600;
-  line-height: 1.55;
-  color: var(--text-heading);
+  border-bottom: 1px solid var(--border);
 }
 
 .honors-list__item:first-child {
   padding-top: 0;
+}
+
+.honors-list__item:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.honors-list__header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: start;
+  column-gap: 16px;
+}
+
+.honors-list__title {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.35;
+  color: var(--text-heading);
+}
+
+.honors-list__year {
+  margin: 0;
+  padding: 0;
+  justify-self: end;
+  align-self: start;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.35;
+  color: var(--text-heading);
+  text-align: right;
+  white-space: nowrap;
 }
 
 .honors-list__detail {
@@ -928,8 +971,16 @@ main {
   color: var(--text-muted);
 }
 
-.honors-list__item:last-child {
-  padding-bottom: 0;
+@media (max-width: 640px) {
+  .honors-list__header {
+    grid-template-columns: 1fr;
+    row-gap: 2px;
+  }
+
+  .honors-list__year {
+    justify-self: start;
+    text-align: left;
+  }
 }
 
 /* —— Legacy education card styles (unused) —— */
