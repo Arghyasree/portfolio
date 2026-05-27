@@ -115,12 +115,12 @@ export const PROFILE = {
   experience: [
     {
       title: 'Teaching Assistant — Object-Oriented Systems Lab',
-      year: '2026',
+      year: '2025',
       detail: 'B.E. (IT) 2nd Year, Jadavpur University',
     },
     {
       title: 'Teaching Assistant — Machine Learning Lab',
-      year: '2025',
+      year: '2024',
       detail: 'B.E. (IT) 4th Year, Jadavpur University',
     },
   ],
