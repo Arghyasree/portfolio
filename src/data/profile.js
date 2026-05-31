@@ -125,17 +125,17 @@ export const PROFILE = {
   experience: [
     {
       title: 'Junior Research Fellow in Computer Science',
-      year: '2025 – present',
+      year: 'July 2025 — Present',
       detail: 'Indian Statistical Institute, Kolkata',
     },
     {
       title: 'Teaching Assistant — Object-Oriented Systems Lab',
-      year: '2025',
+      year: 'Jan 2025 — May 2025',
       detail: 'B.E. (IT) 2nd Year, Jadavpur University',
     },
     {
       title: 'Teaching Assistant — Machine Learning Lab',
-      year: '2024',
+      year: 'Aug 2024 — Dec 2024',
       detail: 'B.E. (IT) 4th Year, Jadavpur University',
     },
   ],
@@ -173,16 +173,16 @@ export const PROFILE = {
   achievements: [
     {
       title: 'University Gold Medalist, Jadavpur University',
-      year: '2025',
+      year: 'Dec 2025',
       detail: 'Awarded for securing First Class First position in M.E.',
     },
     {
       title: 'UGC NET-JRF in Computer Science',
-      year: '2025',
+      year: 'Feb 2025',
     },
     {
       title: 'GATE in Computer Science',
-      year: '2023',
+      year: 'Mar 2023',
     },
   ],
   affiliation: {
